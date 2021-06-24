@@ -32,7 +32,7 @@ if(select_model=='LSTM'):
 elif(select_model=='RNN'):
     select_learning_rate = sl.sidebar.text_input("Le taux d'apprentissage: ", 'Recommandé(0.001)')
     select_epochs = sl.sidebar.text_input("Le nombre d'epochs(ou steps pour le DNN): ", 'Recommandé(300)')
-    select_batch_size = sl.sidebar.text_input("La taille de batch: ", 'Recommandé(100)')
+    select_batch_size = sl.sidebar.text_input("La taille de batch: ", 'Recommandé(200)')
 else:
     select_learning_rate = sl.sidebar.text_input("Le taux d'apprentissage: ", 'Recommandé(0.001)')
     select_epochs = sl.sidebar.text_input("Le nombre d'epochs(ou steps pour le DNN): ", 'Recommandé(100)')
@@ -53,7 +53,7 @@ if(sl.sidebar.button("Visualiser les résultats")):
     elif (select_model=='RNN'):
          from rnn import *
          sl.info("Veuillez patienter, cette procédure prend des minutes!")
-         implement_model_rnn(select_model, select_learning_rate, select_epochs, select_batch_size)
+         implement_model_rnn(select_learning_rate, select_epochs, select_batch_size)
          
     elif (select_model=='DNN'):
         from dnn import *
