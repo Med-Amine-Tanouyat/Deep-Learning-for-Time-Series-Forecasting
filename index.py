@@ -1,7 +1,6 @@
 import streamlit as sl
 import pandas as pd
 import matplotlib.pyplot as plt
-from PIL import Image
 
 #la fonction qui permet de visualiser les résultats du modèle sous forme de plots
 def visualise_result():
