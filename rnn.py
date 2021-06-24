@@ -113,4 +113,3 @@ def implement_model_rnn(lr, ep, batch):
     #[2.65662455]
 
 
-implement_model_rnn(0.001, 300,200)
